@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RLt-nw-BiI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Download Animation-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="DownloadAnimationViewController" id="BYZ-38-t0r" customClass="DownloadAnimationViewController" customModule="AnimationExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Download Animation" id="Tph-iF-FqP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1455.072463768116" y="77.678571428571431"/>
+        </scene>
+        <!--Alerts-->
+        <scene sceneID="PeH-lq-W1b">
+            <objects>
+                <viewController id="FHa-Ng-6BF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kPI-zg-dBm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="ZcY-4N-sHr">
+                                <rect key="frame" x="185.5" y="363" width="43" height="170"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUH-Bi-EsL">
+                                        <rect key="frame" x="0.0" y="0.0" width="43" height="30"/>
+                                        <state key="normal" title="Alert1"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWz-CW-j7g">
+                                        <rect key="frame" x="0.0" y="70" width="43" height="30"/>
+                                        <state key="normal" title="Alert2"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahq-4f-uxq">
+                                        <rect key="frame" x="0.0" y="140" width="43" height="30"/>
+                                        <state key="normal" title="Alert3"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZcY-4N-sHr" firstAttribute="centerX" secondItem="kPI-zg-dBm" secondAttribute="centerX" id="JYq-gU-Mm7"/>
+                            <constraint firstItem="ZcY-4N-sHr" firstAttribute="centerY" secondItem="kPI-zg-dBm" secondAttribute="centerY" id="ovf-la-zgp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fGI-VW-hEj"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Alerts" id="Ks7-Pz-oWA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yXF-Qg-8HI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1462" y="759"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3Zu-Bf-Imo">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="elO-IG-txj" customClass="ViewController" customModule="AnimationExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7s9-kt-5ch">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="IUn-xN-fEr">
+                                <rect key="frame" x="97" y="363" width="220" height="170"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXd-nT-dlM">
+                                        <rect key="frame" x="0.0" y="0.0" width="220" height="30"/>
+                                        <state key="normal" title="Percentage download animation"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="npb-ph-TTj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7U5-iN-UCH">
+                                        <rect key="frame" x="0.0" y="70" width="220" height="30"/>
+                                        <state key="normal" title=" SwiftyEntryKits"/>
+                                        <connections>
+                                            <segue destination="FHa-Ng-6BF" kind="show" id="KDX-YK-Jy6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0y5-HA-VRM">
+                                        <rect key="frame" x="0.0" y="140" width="220" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="IUn-xN-fEr" firstAttribute="centerY" secondItem="7s9-kt-5ch" secondAttribute="centerY" id="f6q-Lp-lUC"/>
+                            <constraint firstItem="IUn-xN-fEr" firstAttribute="centerX" secondItem="7s9-kt-5ch" secondAttribute="centerX" id="wFg-v9-rFm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="y6B-3n-K58"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1MU-6F-u2W"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7zH-GT-Pqr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="592.75362318840587" y="77.678571428571431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vjg-Ya-MTP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RLt-nw-BiI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="akk-wE-7h6">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="elO-IG-txj" kind="relationship" relationship="rootViewController" id="3Bb-xW-lvT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Ck-bJ-Idg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-317.39130434782612" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+</document>
