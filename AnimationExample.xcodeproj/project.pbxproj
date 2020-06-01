@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06574442247C303F00F0DD67 /* MATERIALioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06574441247C303F00F0DD67 /* MATERIALioViewController.swift */; };
 		067081992477A52C00F4E3B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067081982477A52C00F4E3B2 /* AppDelegate.swift */; };
 		0670819B2477A52C00F4E3B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0670819A2477A52C00F4E3B2 /* SceneDelegate.swift */; };
 		0670819D2477A52C00F4E3B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0670819C2477A52C00F4E3B2 /* ViewController.swift */; };
@@ -16,10 +17,12 @@
 		06D5205D247BE0B50000DF74 /* DownloadAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D5205C247BE0B50000DF74 /* DownloadAnimationViewController.swift */; };
 		06D5205F247BE1210000DF74 /* SwiftyEntryKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D5205E247BE1210000DF74 /* SwiftyEntryKitViewController.swift */; };
 		06D52062247BE57A0000DF74 /* PopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D52061247BE57A0000DF74 /* PopUpView.swift */; };
+		06F66C1D2484BAC700F4D551 /* AnimatedButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F66C1C2484BAC700F4D551 /* AnimatedButtonViewController.swift */; };
 		7C94B31D5082178A4799B0EB /* Pods_AnimationExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509B26977D5B32303F7727E0 /* Pods_AnimationExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06574441247C303F00F0DD67 /* MATERIALioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MATERIALioViewController.swift; sourceTree = "<group>"; };
 		067081952477A52C00F4E3B2 /* AnimationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		067081982477A52C00F4E3B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0670819A2477A52C00F4E3B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +34,7 @@
 		06D5205C247BE0B50000DF74 /* DownloadAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAnimationViewController.swift; sourceTree = "<group>"; };
 		06D5205E247BE1210000DF74 /* SwiftyEntryKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyEntryKitViewController.swift; sourceTree = "<group>"; };
 		06D52061247BE57A0000DF74 /* PopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpView.swift; sourceTree = "<group>"; };
+		06F66C1C2484BAC700F4D551 /* AnimatedButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedButtonViewController.swift; sourceTree = "<group>"; };
 		509B26977D5B32303F7727E0 /* Pods_AnimationExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimationExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92405F6C1B45D668235B9626 /* Pods-AnimationExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationExample.release.xcconfig"; path = "Target Support Files/Pods-AnimationExample/Pods-AnimationExample.release.xcconfig"; sourceTree = "<group>"; };
 		F78476BF1F1FFBA426CCF99D /* Pods-AnimationExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationExample.debug.xcconfig"; path = "Target Support Files/Pods-AnimationExample/Pods-AnimationExample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -48,6 +52,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06574440247C300000F0DD67 /* Material.io */ = {
+			isa = PBXGroup;
+			children = (
+				06574441247C303F00F0DD67 /* MATERIALioViewController.swift */,
+			);
+			path = Material.io;
+			sourceTree = "<group>";
+		};
 		0670818C2477A52B00F4E3B2 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +81,8 @@
 		067081972477A52C00F4E3B2 /* AnimationExample */ = {
 			isa = PBXGroup;
 			children = (
+				06F66C1B2484BAAF00F4D551 /* AnimatedButton */,
+				06574440247C300000F0DD67 /* Material.io */,
 				06D52060247BE55F0000DF74 /* SwiftyEntryKit */,
 				067081982477A52C00F4E3B2 /* AppDelegate.swift */,
 				0670819A2477A52C00F4E3B2 /* SceneDelegate.swift */,
@@ -89,6 +103,14 @@
 				06D52061247BE57A0000DF74 /* PopUpView.swift */,
 			);
 			path = SwiftyEntryKit;
+			sourceTree = "<group>";
+		};
+		06F66C1B2484BAAF00F4D551 /* AnimatedButton */ = {
+			isa = PBXGroup;
+			children = (
+				06F66C1C2484BAC700F4D551 /* AnimatedButtonViewController.swift */,
+			);
+			path = AnimatedButton;
 			sourceTree = "<group>";
 		};
 		993EB46212EFA4DD745A274C /* Frameworks */ = {
@@ -225,10 +247,12 @@
 			files = (
 				0670819D2477A52C00F4E3B2 /* ViewController.swift in Sources */,
 				067081992477A52C00F4E3B2 /* AppDelegate.swift in Sources */,
+				06574442247C303F00F0DD67 /* MATERIALioViewController.swift in Sources */,
 				0670819B2477A52C00F4E3B2 /* SceneDelegate.swift in Sources */,
 				06D52062247BE57A0000DF74 /* PopUpView.swift in Sources */,
 				06D5205D247BE0B50000DF74 /* DownloadAnimationViewController.swift in Sources */,
 				06D5205F247BE1210000DF74 /* SwiftyEntryKitViewController.swift in Sources */,
+				06F66C1D2484BAC700F4D551 /* AnimatedButtonViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

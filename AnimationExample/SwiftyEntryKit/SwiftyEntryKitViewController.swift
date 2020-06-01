@@ -11,6 +11,8 @@ import SwiftEntryKit
 
 class SwiftyEntryKitViewController: UIViewController {
     
+    
+    
     @IBOutlet weak var alert1Button: UIButton!
     @IBOutlet weak var alert1Button1: UIButton!
     @IBOutlet weak var alert1Button2: UIButton!
@@ -93,7 +95,7 @@ class SwiftyEntryKitViewController: UIViewController {
   
     @IBAction func alertTapButton1(_ sender: Any) {
         
-        
+//        SwiftEntryKit.display(entry:alert2(), using: setupEKAttributes())
       
     }
     @IBAction func alertTapButton2(_ sender: Any) {

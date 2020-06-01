@@ -23,6 +23,22 @@
             </objects>
             <point key="canvasLocation" x="1455.072463768116" y="77.678571428571431"/>
         </scene>
+        <!--Animated Button View Controller-->
+        <scene sceneID="yaG-S8-efO">
+            <objects>
+                <viewController storyboardIdentifier="AnimatedButtonViewController" id="Jfd-7F-ExQ" customClass="AnimatedButtonViewController" customModule="AnimationExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NaK-eq-dMK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="pqT-YJ-8PJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BRO-Rn-bdr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1tk-wg-fcz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="593" y="759"/>
+        </scene>
         <!--Alerts-->
         <scene sceneID="PeH-lq-W1b">
             <objects>
@@ -74,6 +90,35 @@
             </objects>
             <point key="canvasLocation" x="1462" y="759"/>
         </scene>
+        <!--Material.io-->
+        <scene sceneID="hDr-4h-T08">
+            <objects>
+                <viewController storyboardIdentifier="MATERIALioViewController" id="p54-ri-xxi" customClass="MATERIALioViewController" customModule="AnimationExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="orK-Vs-Arc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8z-Cy-sNo">
+                                <rect key="frame" x="162" y="433" width="90" height="30"/>
+                                <state key="normal" title="Show banner"/>
+                                <connections>
+                                    <action selector="showBannerButton:" destination="p54-ri-xxi" eventType="touchUpInside" id="mrJ-LT-V0r"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25788793261609855" green="1" blue="0.44341594946207397" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="E8z-Cy-sNo" firstAttribute="centerY" secondItem="orK-Vs-Arc" secondAttribute="centerY" id="HzM-Gh-RL4"/>
+                            <constraint firstItem="E8z-Cy-sNo" firstAttribute="centerX" secondItem="orK-Vs-Arc" secondAttribute="centerX" id="x3N-1o-o7e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PXd-sc-tvW"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Material.io" id="aJC-rR-wF3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1bo-L8-kgA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2281.1594202898555" y="758.70535714285711"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="3Zu-Bf-Imo">
             <objects>
@@ -83,7 +128,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="IUn-xN-fEr">
-                                <rect key="frame" x="97" y="363" width="220" height="170"/>
+                                <rect key="frame" x="97" y="328" width="220" height="240"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXd-nT-dlM">
                                         <rect key="frame" x="0.0" y="0.0" width="220" height="30"/>
@@ -101,7 +146,17 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0y5-HA-VRM">
                                         <rect key="frame" x="0.0" y="140" width="220" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Material.io"/>
+                                        <connections>
+                                            <segue destination="p54-ri-xxi" kind="show" id="NjV-i0-dy9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJy-Ma-8ho" userLabel="animatedButton">
+                                        <rect key="frame" x="0.0" y="210" width="220" height="30"/>
+                                        <state key="normal" title="AnimationButton"/>
+                                        <connections>
+                                            <segue destination="Jfd-7F-ExQ" kind="show" id="wE3-ql-nXl"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

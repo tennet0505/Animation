@@ -6,6 +6,8 @@ target 'AnimationExample' do
   use_frameworks!
   
   pod 'SwiftEntryKit', '1.2.3'
+  
+  pod 'MaterialComponents/Banner'
 
   # Pods for AnimationExample
 
